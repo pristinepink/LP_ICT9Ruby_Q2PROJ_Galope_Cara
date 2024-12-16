@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="sakurachibi.png" alt="logo" width="50px" height="50px" class="rounded-circle"></a>
+
+        <!-- Add Links -->
+            <div class="collapse navbar-collapse">
+
+
+                <-- me-auto adjust pushes the search bar to the right -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"> <a class="nav-link" href="page2.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Categories</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+                    </ul>
+
+
+                    <!-- Add search bar -->
+                        <form class="d-flex">
+                            <input class="form-control" type="text" placeholder="search...">
+                            <button class="btn btn-success" type="button">Search</button>
+                        </form>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="container mt-5">
+        <div class="text-center">
+            <h1>Welcome to Pink Recipes!</h1>
+            <p>Your go-to platform for delicious and cute recipes.</p>
+
+        </div>
+        <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="featured1.jpg" class="d-block w-100" alt="Featured Recipe 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="featured2.jpg" class="d-block w-100" alt="Featured Recipe 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="featured3.jpg" class="d-block w-100" alt="Featured Recipe 3">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Recipe Categories Page -->
+    <section id="categories" class="container mt-5">
+        <h2 class="text-center">Recipe Categories</h2>
+
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="breakfast.jpg" class="card-img-top" alt="Breakfast">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Cupcakes with Whipped Cream Frosting</h5>
+                        <p class="card-text">Fresh strawberries for a good breakfast.</p>
+                        <a href="https://www.tasteofhome.com/recipes/strawberry-cupcakes-with-whipped-cream-frosting/" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="lunch.jpg" class="card-img-top" alt="Lunch">
+                    <div class="card-body">
+                        <h5 class="card-title">Raspberry Coconut Balls</h5>
+                        <p class="card-text">A hearty and fulfilling snack.</p>
+                        <a href="https://www.tasteofhome.com/recipes/raspberry-coconut-balls/" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="dinner.jpg" class="card-img-top" alt="Dinner">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Cream Cheese Dip</h5>
+                        <p class="card-text">An easy and lightweight recipe.</p>
+                        <a href="https://www.tasteofhome.com/recipes/strawberry-cream-dip/" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="dessert.jpg" class="card-img-top" alt="Chocolate-Topped Strawberry Cheesecake">
+                    <div class="card-body">
+                        <h5 class="card-title">Dessert</h5>
+                        <p class="card-text">A sweet treat to satisfy your cravings.</p>
+                        <a href="https://www.tasteofhome.com/recipes/strawberry-cheesecake/" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="submission" class="container mt-5">
+        <h2 class="text-center">Submit Your Recipe</h2>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="recipeName" class="form-label">Recipe Name</label>
+                <input type="text" class="form-control" id="recipeName" placeholder="Enter recipe name">
+
+            </div>
+            <div class="mb-3">
+                <label for="recipeIngredients" class="form-label">Ingredients</label>
+                <textarea class="form-control" id="recipeIngredients" rows="3" placeholder="List ingredients here..."></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="recipeInstructions" class="form-label">Instructions</label>
+                <textarea class="form-control" id="recipeInstructions" rows="5" placeholder="Write step-by-step instructions..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit Recipe</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
